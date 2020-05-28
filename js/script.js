@@ -59,14 +59,19 @@ $.getJSON("https://api.songkick.com/api/3.0/artists/10130913/calendar.json?apike
     function popEvent(data) {
         console.log("working")
         // Make the blank variables
-        var eventName;
-        var eventVenue;
-        var eventTime;
-        var eventPrice;
+        var domEventName = document.getElementById("eventName");
+        var domEventVenue = document.getElementById("eventVenue");
+        var domEventTime = document.getElementById("eventTime");
+        var domEventAge = document.getElementById("eventAge");
 
         console.log(data.resultsPage.totalEntries);
 
-
+        if (data.resultsPage.totalEntries === 0) {
+            domEventName.textContent = "N/A";
+            domEventVenue.textContent = "N/A";
+            domEventTime.textContent = "N/A";
+            domEventAge.textContent = "N/A";
+        };
         // Loop though the object bassed on the number of events e.g: 4
         // console.log(data.resultsPage.results + "<br>");
 
@@ -94,6 +99,8 @@ $.getJSON("https://api.songkick.com/api/3.0/artists/10130913/calendar.json?apike
 
 
             };
+
+
         };
     };
     popEvent(data);
