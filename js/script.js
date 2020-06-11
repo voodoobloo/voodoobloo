@@ -64,6 +64,8 @@ $.getJSON("https://api.songkick.com/api/3.0/artists/10130913/calendar.json?apike
         var domEventTime = document.getElementById("eventTime");
         var domEventAge = document.getElementById("eventAge");
 
+        var upComingShows = document.getElementById("upComingShows");
+
         console.log(data.resultsPage.totalEntries);
 
         if (data.resultsPage.totalEntries === 0) {
@@ -71,6 +73,10 @@ $.getJSON("https://api.songkick.com/api/3.0/artists/10130913/calendar.json?apike
             domEventVenue.textContent = "N/A";
             domEventTime.textContent = "N/A";
             domEventAge.textContent = "N/A";
+
+            // upComingShows.style.display = "none";
+            $("#upComingShows").hide();
+            $("#noShows").show();
         };
         // Loop though the object bassed on the number of events e.g: 4
         // console.log(data.resultsPage.results + "<br>");
@@ -80,6 +86,9 @@ $.getJSON("https://api.songkick.com/api/3.0/artists/10130913/calendar.json?apike
             var domEventVenue = document.getElementById("eventVenue");
             var domEventTime = document.getElementById("eventTime");
             var domEventAge = document.getElementById("eventAge");
+
+            $("#upComingShows").show();
+            $("#noShows").hide();
 
             for (var i = 0; i < data.resultsPage.totalEntries; i++) {
                 data.resultsPage.totalEntries[i];

@@ -12,6 +12,8 @@
         <meta name="keywords" content="Voodoo Bloo, voodoo, bloo, NZ, Band, Punk, Rock, NZ Music, Music, Indie">
         <meta name="robots" content="index, follow" />
 
+        <!-- Fonts -->
+        <link rel="stylesheet" href="css/stylesheet.css">
 
         <!-- Google Verification Tag -->
         <meta name="google-site-verification" content="55sdss12Jr6v7vi5wE5lfeUnb9S4Qzj6JFVJSPIjeZg" />
@@ -37,6 +39,7 @@
                             <!-- <a href="tempPage.html"><li class="listItem">Shows</li></a> -->
                             <a href="tempPage.html"><li class="listItem">Blog</li></a>
                             <a href="shop.html"><li class="listItem">Merch</li></a>
+                            <a href="contact.html"><li class="listItem">Contact</li></a>
                         </ul>
                     </div>
                 </div>
@@ -87,7 +90,8 @@
         </section>
 
         <!-- upcoming shows -->
-        <section class="container upComingContainer">
+        <h2 id="noShows" style="text-align: center">No upcoming show dates</h2>
+        <section class="container upComingContainer" id="upComingShows">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://widget.songkick.com/10130913/widget.js"></script>
             <a href="https://www.songkick.com/artists/10130913" class="songkick-widget songKickLink" data-theme="light" data-track-button="on" data-detect-style="true" data-background-color="transparent" data-locale="en" target="_blank" style="text-align: center">Voodoo Bloo Show Dates <i class="fas fa-mouse mouseIcon"></i></a>
@@ -181,13 +185,13 @@
             };
 
             $('#customInstaFeed').spectragram({
-            	max: 4,
+            	max: 2,
             	size: "medium",
             	wrapEachWith: "<a>"
             });
         </script>
 
-        <script>
+        <!-- <script>
         $(document).ready(function(){
         $('.social-feed-container').socialfeed({
         // FACEBOOK
@@ -223,7 +227,7 @@
         }
         });
         });
-        </script>
+        </script> -->
 
 
 
