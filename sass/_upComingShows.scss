@@ -1,0 +1,22 @@
+.upcomingTable {
+    tr {
+        text-align: left;
+        td {
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+        }
+    }
+
+    margin-bottom: 5%;
+}
+
+.songKickLink {
+    font-size: 1.3em;
+    text-decoration: underline;
+    margin-bottom: 10%;
+}
+
+
+@media screen and (max-width:600px) {
+    
+}

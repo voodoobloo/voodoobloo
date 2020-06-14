@@ -1,0 +1,28 @@
+// Mobile Optimized Code
+.shopContainer {
+    padding: 2% 10%;
+}
+
+.shopHeader {
+    text-decoration: underline;
+    padding-top: 15%;
+    font-size: 1em;
+}
+
+
+
+
+
+// Desktop Optmization
+@media screen and (min-width: 900px) {
+    .shopContainer {
+        padding: 0% 10%;
+        padding-bottom: 2%;
+    }
+
+    .shopHeader {
+        text-decoration: underline;
+        padding-top: 13%;
+        font-size: 1.8em;
+    }
+}

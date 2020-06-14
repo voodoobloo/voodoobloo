@@ -1,0 +1,80 @@
+@import "variables";
+
+@import "grid";
+@import "nav";
+@import "header";
+@import "index";
+@import "footer";
+@import "slideshow";
+@import "animations";
+@import "shop";
+@import "upComingShows";
+@import "contact";
+
+#noShows {
+    color: white;
+    margin: 5% 0%;
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $pColour;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1, h2, a, {
+	font-family: 'lavah_progrunge' !important;
+}
+
+img {
+    // width: 100%;
+}
+
+// Objects
+.container {
+    padding: 5% 10%;
+}
+
+.centerCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.w100h100 {
+    height: 100vh;
+    width: 100%;
+}
+
+.textWhite {
+    color: white;
+}
+
+.placeHolderH1 {
+    text-decoration: underline;
+    font-weight: normal;
+    text-align: left;
+    font-size: 2em;
+}
+
+
+
+
+
+// Desktop Optmization
+@media screen and (min-width:900px) {
+    .container {
+        padding: 0% 10%;
+    }
+}

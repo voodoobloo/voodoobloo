@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'lavah_progrunge';
-    src: url('lavahpro-grunge.woff2') format('woff2'),
-         url('lavahpro-grunge.woff') format('woff');
+    src: url('../fonts/lavahpro-grunge.woff2') format('woff2'),
+         url('../fonts/lavahpro-grunge.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'lavah_prorough';
-    src: url('lavahpro-rough.woff2') format('woff2'),
-         url('lavahpro-rough.woff') format('woff');
+    src: url('../fonts/lavahpro-rough.woff2') format('woff2'),
+         url('../fonts/lavahpro-rough.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

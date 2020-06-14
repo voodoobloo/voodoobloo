@@ -1,0 +1,52 @@
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.contactContainer {
+    width: 40%;
+    margin: 5%, 10%;
+
+    form {
+        margin-top: 30%;
+        margin-bottom: 30%;
+
+        label {
+            font-size: 1.8em;
+        }
+
+        input, textarea {
+            border-radius: 4px;
+            border: none;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            color: white;
+            background-color: $sColour;
+        }
+
+        input {
+            width: 90% !important;
+        }
+
+        button {
+            background-color: $sColour;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+                }
+            }
+}
+
+@media screen and (max-width: 900px) {
+    .contactContainer {
+        width: 90%;
+    }
+}
