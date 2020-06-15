@@ -277,7 +277,7 @@
     display: flex !important;
     padding: 0% !important;
     margin: 0 !important;
-    width: 49% !important; }
+    width: 100% !important; }
     #customInstaFeed a a {
       width: 100% !important; }
 
@@ -535,8 +535,8 @@ body {
   background-color: #242424;
   font-family: 'Open Sans', sans-serif; }
 
-h1, h2, a {
-  font-family: 'lavah_progrunge' !important; }
+h1, h2 {
+  font-family: 'lavah_progrunge'; }
 
 .container {
   padding: 5% 10%; }
