@@ -30,7 +30,7 @@
         }
 
         input {
-            width: 90% !important;
+            width: 90%;
         }
 
         button {
@@ -48,5 +48,9 @@
 @media screen and (max-width: 900px) {
     .contactContainer {
         width: 90%;
+
+        input {
+          width: 100% !important;
+        }
     }
 }

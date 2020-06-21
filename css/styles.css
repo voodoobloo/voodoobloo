@@ -505,7 +505,7 @@ a {
       color: white;
       background-color: #1c1c1c; }
     .contactContainer form input {
-      width: 90% !important; }
+      width: 90%; }
     .contactContainer form button {
       background-color: #1c1c1c;
       border: none;
@@ -517,11 +517,14 @@ a {
 
 @media screen and (max-width: 900px) {
   .contactContainer {
-    width: 90%; } }
+    width: 90%; }
+    .contactContainer input {
+      width: 100% !important; } }
 #noShows {
   color: white;
   margin: 5% 0%;
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-size: 2.4em; }
 
 html {
   scroll-behavior: smooth; }
